@@ -16,12 +16,37 @@
     <!-- Css Styles -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
     <link rel="stylesheet" href="{{asset('css/nice-select.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/jquery-ui.min.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/slicknav.min.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
+
+    <!-- toastr-notification -->
+      <style>
+#toast-container>.toast-info {
+
+background-color: #313a46;
+color: #EEEEEE;
+}
+#toast-container>.toast-success {
+background-color: #250202;
+color: white;
+
+}
+#toast-container>.toast-warning {
+
+background-color: #190101;
+color: white;
+}
+#toast-container>.toast-error {
+
+background-color: #cac409;
+color: white;
+}
+    </style>
     @yield('css')
 </head>
 
@@ -132,7 +157,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="hero__text  py-4" style="background: rgba(0,0,0,0.7); box-shadaow: 20px 20px 20px 20px white;">
-                        <h1 class="pb-2 text-white">Cheap Hajj Packages by Amin Travels & Tours</h1>
+                        <h2 class="pb-2 text-white"> Cheap Hajj Packages by Amin Travels & Tours </h2>
                     
                         <a href="#" class="primary-btn">Contact us</a>
                         <a href="#" class="primary-btn second-bg">See Packages</a>
@@ -375,14 +400,80 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
-    <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+  <!--   <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.min.js')}}"></script> -->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="{{asset('js/jquery.nice-select.min.js')}}"></script>
     <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
     <script src="{{asset('js/jquery-ui.min.js')}}"></script>
     <script src="{{asset('js/jquery.slicknav.js')}}"></script>
     <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="{{asset('js/main.js')}}"></script>
+
+     <!-- toastr -->
+    <script>
+
+@if (Session::has('message'))
+var type = "{{ Session::get('alert-type', 'info') }}"
+switch(type){
+
+case 'info':
+toastr.options.timeOut = 5000;
+toastr.options.closeButton = true;
+toastr.options.preventDuplicates = false;
+toastr.options.closeHtml = '<button><i class="far fa-window-close"></i></button>';
+toastr.options.showMethod = 'slideDown';
+toastr.options.hideMethod = 'slideUp';
+toastr.options.closeMethod = 'slideUp';
+toastr.info("{{Session::get('message')}}");
+var audio = new Audio('audio.mp3');
+audio.play();
+break;
+
+case 'success':
+toastr.options.timeOut = 5000;
+toastr.options.closeButton = true;
+toastr.options.preventDuplicates = false;
+toastr.options.closeHtml = '<button><i class="far fa-window-close"></i></button>';
+toastr.options.showMethod = 'slideDown';
+toastr.options.hideMethod = 'slideUp';
+toastr.options.closeMethod = 'slideUp';
+toastr.success("{{Session::get('message')}}");
+var audio = new Audio('audio.mp3');
+audio.play();
+break;
+
+case 'warning':
+toastr.options.timeOut = 5000;
+toastr.options.closeButton = true;
+toastr.options.preventDuplicates = false;
+toastr.options.closeHtml = '<button><i class="far fa-window-close"></i></button>';
+toastr.options.showMethod = 'slideDown';
+toastr.options.hideMethod = 'slideUp';
+toastr.options.closeMethod = 'slideUp';
+toastr.warning("{{Session::get('message')}}");
+var audio = new Audio('audio.mp3');
+audio.play();
+break;
+
+case 'error':
+toastr.options.timeOut = 5000;
+toastr.options.closeButton = true;
+toastr.options.preventDuplicates = false;
+toastr.options.closeHtml = '<button><i class="far fa-window-close"></i></button>';
+toastr.options.showMethod = 'slideDown';
+toastr.options.hideMethod = 'slideUp';
+toastr.options.closeMethod = 'slideUp';
+toastr.error("{{Session::get('message')}}");
+var audio = new Audio('audio.mp3');
+audio.play();
+break;
+}
+@endif
+</script>
     @yield('js')
 </body>
 

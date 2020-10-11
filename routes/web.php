@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+	 $notification=array(
+                'message' => 'Welcome! Get your desired package.',
+                'alert-type' => 'success'
+            );
+
+    return view('home')->with($notification);
 });
