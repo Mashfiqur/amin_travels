@@ -6,256 +6,142 @@
 
 
 @section('container')
-<div id="carouselExampleFade" class="carousel slide carousel-fade mt-5" data-ride="carousel">
-  <div class="carousel-inner " >
-    <div class="carousel-item active">
-      <img class="d-block w-100 " class="wow fadeInUp" data-wow-delay="0.1s" src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg"
-        alt="First slide" >
-         <div class="carousel-caption" style="margin-bottom: 50px;">
-  <div class="container">
-  <div class="row align-items-center justify-content-center">
 
-    
-    <div class="col-md-8 mt-lg-1 text-center">
-      <h1 class="text-uppercase" data-aos="fade-up">Welcome</h1>
-      
-      <div data-aos="fade-up" data-aos-delay="100">
-        <a href="{{ url('/contact') }}" class="btn smoothscroll btn-secondary mr-2 mb-5">Get In Touch</a>
-      </div>
-    </div>
-      
-  </div>
-</div>
-<br>
-<br>
-<a href="#why-us" class="  mouse smoothscroll">
-  <span class="mouse-icon bg-primary">
-    <span class="mouse-wheel"></span>
-  </span>
-</a>
-</div>  
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100 " class="wow fadeInUp" data-wow-delay="0.1s" src="{{url('images/hajj-1.jpg')}}"
-        alt="Second slide" style="height:600px;" >
-         <div class="carousel-caption" style="margin-bottom: 50px;">
-    <div class="container">
-  <div class="row align-items-center justify-content-center">
-
-    
-    <div class="col-md-8 mt-lg-1 text-center">
-      <h1 class="text-uppercase" data-aos="fade-up">Welcome</h1>
-      
-      <div data-aos="fade-up" data-aos-delay="100">
-        <a href="{{ url('/contact') }}" class="btn smoothscroll btn-secondary mr-2 mb-5">Get In Touch</a>
-      </div>
-    </div>
-      
-  </div>
-</div>
-<br>
-<br>
-<a href="#why-us" class="mouse smoothscroll">
-  <span class="mouse-icon bg-primary">
-    <span class="mouse-wheel"></span>
-  </span>
-</a>
-  </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" class="wow fadeInUp" data-wow-delay="0.1s" src="https://mdbootstrap.com/img/Photos/Slides/img%20(33).jpg"
-        alt="First slide"  >
-         <div class="carousel-caption" style="margin-bottom: 50px;">
-     <div class="container">
-  <div class="row align-items-center justify-content-center">
-
-    
-    <div class="col-md-8 mt-lg-1 text-center">
-      <h1 class="text-uppercase" data-aos="fade-up">Welcome</h1>
-      
-      <div data-aos="fade-up" data-aos-delay="100">
-        <a href="{{ url('/contact') }}" class="btn smoothscroll btn-secondary mr-2 mb-5">Get In Touch</a>
-      </div>
-    </div>
-      
-  </div>
-</div>
-<br>
-<br>
-<a href="#why-us" class="  mouse smoothscroll">
-  <span class="mouse-icon bg-primary">
-    <span class="mouse-wheel"></span>
-  </span>
-</a>
-  </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</section>
-
-<!-- Our happy clients -->
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-
-    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
+ <!-- Feature Section Begin -->
+ <section class="feature spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="feature__text">
+                        <div class="section-title">
+                            <span>Why choose us ?</span>
+                            <h2>Our feature</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua viverra maecenas facilisis. </p>
+                        <a href="#" class="primary-btn second-bg">See Courses</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="feature__item">
+                                <img src="img/feature/feature-1.png" alt="">
+                                <h5>Unlimited Car Support</h5>
+                            </div>
+                            <div class="feature__item">
+                                <img src="img/feature/feature-2.png" alt="">
+                                <h5>Driving School Insures</h5>
                             </div>
                         </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-skype"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-google"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="feature__item right-column">
+                                <img src="img/feature/feature-3.png" alt="">
+                                <h5>Any Time Any Location</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section End -->
 
-
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-skype"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-google"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+    <!-- About Video Section Begin -->
+    <section class="about-video">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="about__video__bg set-bg" data-setbg="img/video-bg.jpg">
+                        <a href="https://www.youtube.com/watch?v=bGuHgRQSEuk" class="play-btn video-popup"><i
+                                class="fa fa-play"></i></a>
                     </div>
                 </div>
-                </div>
-
-
-
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
+                <div class="col-lg-6 p-0">
+                    <div class="about__video__text">
+                        <div class="section-title">
+                            <span>Welcome to Online trafic school</span>
+                            <h2>looking for lessons?</h2>
                         </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-skype"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-google"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum vidnas accumsan lacus vel facilisis. </p>
+                        <a href="#" class="primary-btn second-bg">Learn more</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Video Section End -->
+
+   
+
+    <!-- Pricing Section Begin -->
+    <section class="pricing spad set-bg" data-setbg="img/pricing-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <span>Get Special Offer</span>
+                        <h2>Our Pricing</h2>
+                    </div>
                 </div>
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item__title">
+                            <span>20% off</span>
+                            <h2>$ 199</h2>
+                            <h5>Personal Driving</h5>
+                        </div>
+                        <ul>
+                            <li>Full course theory</li>
+                            <li>Full driving course</li>
+                            <li>Training in first aid</li>
+                            <li>Practical sessions</li>
+                            <li>Psychological support</li>
+                        </ul>
+                        <a href="#" class="primary-btn second-bg">get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item__title">
+                            <span>20% off</span>
+                            <h2>$ 379</h2>
+                            <h5>Power Booster</h5>
+                        </div>
+                        <ul>
+                            <li>Full course theory</li>
+                            <li>Full driving course</li>
+                            <li>Training in first aid</li>
+                            <li>Practical sessions</li>
+                            <li>Psychological support</li>
+                        </ul>
+                        <a href="#" class="primary-btn second-bg">get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item__title">
+                            <span>20% off</span>
+                            <h2>$ 259</h2>
+                            <h5>Freight Driving</h5>
+                        </div>
+                        <ul>
+                            <li>Full course theory</li>
+                            <li>Full driving course</li>
+                            <li>Training in first aid</li>
+                            <li>Practical sessions</li>
+                            <li>Psychological support</li>
+                        </ul>
+                        <a href="#" class="primary-btn second-bg">get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section End -->
 
 
 @endsection
